@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="pusheen" BackgroundColor="Plum"
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalTextAlignment="Center"
+               Text="Atikah's Calculator"
+               FontSize="Title"/>
+
+        <Label x:Name="resultText" Text="" x:DataType="Binding" 
+               Grid.Row="1" Grid.ColumnSpan="4" HorizontalTextAlignment="Center" FontSize="Header"/>
+
+        <Button Clicked="OneClick" BackgroundColor="Thistle" Margin="5" Grid.Row="3" Grid.Column="0" Text="1" FontSize="Title"/>
+        <Button Clicked="TwoClick" BackgroundColor="Thistle" Margin="5" Grid.Row="3" Grid.Column="1" Text="2" FontSize="Title"/>
+        <Button Clicked="ThreeClick" BackgroundColor="Thistle" Margin="5" Grid.Row="3" Grid.Column="2" Text="3" FontSize="Title"/>
+        <Button Clicked="FourClick" BackgroundColor="Thistle" Margin="5" Grid.Row="4" Grid.Column="0" Text="4" FontSize="Title"/>
+        <Button Clicked="FiveClick" BackgroundColor="Thistle" Margin="5" Grid.Row="4" Grid.Column="1" Text="5" FontSize="Title"/>
+        <Button Clicked="SixClick" BackgroundColor="Thistle" Margin="5" Grid.Row="4" Grid.Column="2" Text="6" FontSize="Title"/>
+        <Button Clicked="SevenClick" BackgroundColor="Thistle" Margin="5" Grid.Row="5" Grid.Column="0" Text="7" FontSize="Title"/>
+        <Button Clicked="EightClick" BackgroundColor="Thistle" Margin="5" Grid.Row="5" Grid.Column="1" Text="8" FontSize="Title"/>
+        <Button Clicked="NineClick" BackgroundColor="Thistle" Margin="5" Grid.Row="5" Grid.Column="2" Text="9" FontSize="Title"/>
+        <Button Clicked="ZeroClick" BackgroundColor="Thistle" Margin="5" Grid.Row="6" Grid.Column="1" Text="0" FontSize="Title"/>
+
+        <Button Clicked="ClearClick" Margin="5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Clear"/>
+        <Button Margin="5" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Text="Del"/>
+        <Button Clicked="DivideClick" Margin="5" Grid.Row="3" Grid.Column="3" Text="÷" FontSize="Title"/>
+        <Button Clicked="MultiplyClick" Margin="5" Grid.Row="4" Grid.Column="3" Text="*" FontSize="Title"/>
+        <Button Clicked="PlusClick" Margin="5" Grid.Row="5" Grid.Column="3" Text="+" FontSize="Title"/>
+        <Button Clicked="MinusClick" Margin="5" Grid.Row="6" Grid.Column="3" Text="-" FontSize="Title"/>
+        <Button Clicked="EqualsClick" Margin="5" Grid.Row="6" Grid.Column="2" Text="=" FontSize="Title"/>
+        <Button Clicked="PointClick" Margin="5" Grid.Row="6" Grid.Column="0" Text="•" FontSize="Title"/>
+
+
+    </Grid>
+
+
+</ContentPage>
